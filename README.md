@@ -1,35 +1,35 @@
-# Sistemas Operacionais I - Profº Leandro Colevati Dos Santos - 2021-1
+# Sistemas Operacionais I - ProfÂº Leandro Colevati Dos Santos - 2021-1
 
-### ISO100-A11_ADS_FATEC-ZL
+### ISO100-A10_ADS_FATEC-ZL
 
-Primeiro exercicio da terceira lista de Sistemas Operacionais I. Abaixo a descrição do desafio proposto:
+Primeiro exercicio da terceira lista de Sistemas Operacionais I. Abaixo a descriÃ§Ã£o do desafio proposto:
 
 #### Ex. 1
 
-1) Um servidor com multiprocessamento recebe requisições que envolve realizar cálculos e fazer transações com bancos de dados. Por ter uma quantidade grande de núcleos de processamentos  e  threads,  além  de  um  bom  algoritmo  de  escalonamento  de  threads,  enquanto as  threads  fazem  cálculos,  estes  podem  ocorrer  simultaneamente,  mas  quando se faz a transação no banco de dados, esta deve ser apenas uma thread por vez.  Considere  um  conjunto  de  threads  com  IDs  definidas  na  própria  aplicação  com  números iniciando em 1 e incrementando de um em um.
+1) Um servidor com multiprocessamento recebe requisiÃ§Ãµes que envolve realizar cÃ¡lculos e fazer transaÃ§Ãµes com bancos de dados. Por ter uma quantidade grande de nÃºcleos de processamentos  e  threads,  alÃ©m  de  um  bom  algoritmo  de  escalonamento  de  threads,  enquanto as  threads  fazem  cÃ¡lculos,  estes  podem  ocorrer  simultaneamente,  mas  quando se faz a transaÃ§Ã£o no banco de dados, esta deve ser apenas uma thread por vez.  Considere  um  conjunto  de  threads  com  IDs  definidas  na  prÃ³pria  aplicaÃ§Ã£o  com  nÃºmeros iniciando em 1 e incrementando de um em um.
 
 As threads tem comportamento como segue:
 
-a) Threads com ID dividido por 3 resultando em resto igual a um fazem as transações:
-- Cálculos de 0,2 a 1,0 segundos
-- Transação de BD por 1 segundo
-- Cálculos de 0,2 a 1,0 segundos
-- Transação de BD por 1 segundo
+a) Threads com ID dividido por 3 resultando em resto igual a um fazem as transaÃ§Ãµes:
+- CÃ¡lculos de 0,2 a 1,0 segundos
+- TransaÃ§Ã£o de BD por 1 segundo
+- CÃ¡lculos de 0,2 a 1,0 segundos
+- TransaÃ§Ã£o de BD por 1 segundo
 
-b) Threads com ID dividido por 3 resultando em resto igual a dois fazem as transações:
-- Cálculos de 0,5 a 1,5 segundos
-- Transação de BD por 1,5 segundo
-- Cálculos de 0,5 a 1,5 segundos
-- Transação de BD por 1,5 segundo
-- Cálculos de 0,5 a 1,5 segundos
-- Transação de BD por 1,5 segundo
+b) Threads com ID dividido por 3 resultando em resto igual a dois fazem as transaÃ§Ãµes:
+- CÃ¡lculos de 0,5 a 1,5 segundos
+- TransaÃ§Ã£o de BD por 1,5 segundo
+- CÃ¡lculos de 0,5 a 1,5 segundos
+- TransaÃ§Ã£o de BD por 1,5 segundo
+- CÃ¡lculos de 0,5 a 1,5 segundos
+- TransaÃ§Ã£o de BD por 1,5 segundo
 
-c) Threads com ID dividido por 3 resultando em resto igual a zero fazem as transações:
-- Cálculos de 1 a 2 segundos
-- Transação de BD por 1,5 segundo
-- Cálculos de 1 a 2 segundos
-- Transação de BD por 1,5 segundo
-- Cálculos de 1 a 2 segundos
-- Transação de BD por 1,5 segundo
+c) Threads com ID dividido por 3 resultando em resto igual a zero fazem as transaÃ§Ãµes:
+- CÃ¡lculos de 1 a 2 segundos
+- TransaÃ§Ã£o de BD por 1,5 segundo
+- CÃ¡lculos de 1 a 2 segundos
+- TransaÃ§Ã£o de BD por 1,5 segundo
+- CÃ¡lculos de 1 a 2 segundos
+- TransaÃ§Ã£o de BD por 1,5 segundo
 
-Faça  uma  aplicação  em  Java  que  simule  a  situação  de  21  Threads  simultâneas,  com  exibição em console de cada passo que a Thread está realizando.
+FaÃ§a  uma  aplicaÃ§Ã£o  em  Java  que  simule  a  situaÃ§Ã£o  de  21  Threads  simultÃ¢neas,  com  exibiÃ§Ã£o em console de cada passo que a Thread estÃ¡ realizando.
