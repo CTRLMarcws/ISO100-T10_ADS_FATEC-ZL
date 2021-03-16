@@ -1,4 +1,10 @@
-Exercícios Threads com Semáforos
+# Sistemas Operacionais I - Profº Leandro Colevati Dos Santos - 2021-1
+
+### ISO100-A11_ADS_FATEC-ZL
+
+Primeiro exercicio da terceira lista de Sistemas Operacionais I. Abaixo a descrição do desafio proposto:
+
+#### Ex. 1
 
 1) Um servidor com multiprocessamento recebe requisições que envolve realizar cálculos e fazer transações com bancos de dados. Por ter uma quantidade grande de núcleos de processamentos  e  threads,  além  de  um  bom  algoritmo  de  escalonamento  de  threads,  enquanto as  threads  fazem  cálculos,  estes  podem  ocorrer  simultaneamente,  mas  quando se faz a transação no banco de dados, esta deve ser apenas uma thread por vez.  Considere  um  conjunto  de  threads  com  IDs  definidas  na  própria  aplicação  com  números iniciando em 1 e incrementando de um em um.
 
